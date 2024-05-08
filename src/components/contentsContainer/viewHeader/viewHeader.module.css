@@ -1,0 +1,45 @@
+.list {
+  display: flex;
+  font-size: 14px;
+  gap: 8px;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+  user-select: none;
+  width: 830px;
+          
+  .listItem {
+    align-items: center;
+    border-radius: 8px;
+    color: light-dark(var(--textLight), var(--textDark));
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    height: 30px;
+    justify-content: center;
+    padding: 0 10px;
+    text-decoration: none;
+    transition: ease 0.2s;
+
+    .itemIcon {
+      font-size: 16px;
+    }
+
+    .itemText {
+      margin: 0;
+    }
+  }
+
+  .listItem:hover {
+    background: light-dark(var(--itemHoverLight), var(--itemHoverDark));
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}

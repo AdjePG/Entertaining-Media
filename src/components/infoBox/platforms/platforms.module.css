@@ -1,0 +1,12 @@
+.platforms {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+
+  .icon {
+    color: light-dark(var(--textLight), var(--textDark));
+    font-size: 16px;
+    transition: ease 0.2s;
+  }
+}

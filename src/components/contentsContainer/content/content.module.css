@@ -1,0 +1,153 @@
+.content {
+  --contentLight: #e6e6e6;
+  --contentDark: #232323;
+  --noImageLight: #d6d6d6;
+  --noImageDark: #333333;
+
+  background: light-dark(var(--contentLight), var(--contentDark));
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: scale ease 0.2s;
+  user-select: none;
+
+  .frontPage {
+    background: light-dark(var(--noImageLight), var(--noImageDark));
+    border-radius: 8px 8px 0 0;
+    object-fit: contain;
+    width: 200px;
+
+    &.noImage {
+      align-items: center;
+      background: light-dark(var(--noImageLight), var(--noImageDark));
+      color: light-dark(var(--contentLight), var(--contentDark));
+      display: flex;
+      font-size: 100px;
+      justify-content: center;
+      width: 200px;
+    }
+
+    &.movies {
+      height: calc(200px * 3 / 2);
+    }
+
+    &.games {
+      height: calc(200px * 4 / 3);
+    }
+
+    &.books {
+      height: calc(200px * 10 / 8);
+    }
+  }
+
+  .title {
+    display: block;
+    text-align: center;
+    align-content: center;
+    margin: 10px;
+    min-height: 80px;
+  }
+
+  &.rows {
+    .frontPage {
+      border-radius: 8px;
+      width: 130px;
+      
+      &.noImage {
+        box-sizing: border-box;
+        color: light-dark(var(--textLight), var(--textDark));
+        font-size: 14px;
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+        width: 130px;
+      }
+
+      &.movies {
+        height: calc(130px * 3 / 2);
+      }
+    
+      &.games {
+        height: calc(130px * 4 / 3);
+      } 
+  
+      &.books {
+        height: calc(130px * 10 / 8);
+      } 
+    }
+
+    &.movies {
+      height: calc(130px * 3 / 2);
+    }
+  
+    &.games {
+      height: calc(130px * 4 / 3);
+    } 
+
+    &.books {
+      height: calc(130px * 10 / 8);
+    } 
+  }
+}
+
+.content:hover {
+  scale: 1.05;
+}
+
+@media screen and (max-width: 450px) {
+  .content {
+    .frontPage {
+      width: 160px;
+
+      &.noImage {
+        width: 160px;
+      }
+
+      &.movies {
+        height: calc(160px * 3 / 2);
+      }
+  
+      &.games {
+        height: calc(160px * 4 / 3);
+      }
+  
+      &.books {
+        height: calc(160px * 10 / 8);
+      }
+    }
+  
+    &.rows {
+      .frontPage {
+        width: 100px;
+
+        &.noImage {
+          width: 100px;
+        }
+
+        &.movies {
+          height: calc(100px * 3 / 2);
+        }
+      
+        &.games {
+          height: calc(100px * 4 / 3);
+        } 
+    
+        &.books {
+          height: calc(100px * 10 / 8);
+        } 
+      }
+
+      &.movies {
+        height: calc(100px * 3 / 2);
+      }
+    
+      &.games {
+        height: calc(100px * 4 / 3);
+      } 
+  
+      &.books {
+        height: calc(100px * 10 / 8);
+      } 
+    }
+  }
+}

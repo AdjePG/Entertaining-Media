@@ -1,0 +1,19 @@
+.container {
+  --iconLight: #d6d6d6;
+  --iconDark: #333333;
+
+  align-content: center;
+  height: calc(100dvh - 46px);
+  padding: 46px 0 0 0;
+  text-align: center;
+
+  .icon {
+    font-size: 160px;
+    color: light-dark(var(--iconLight), var(--iconDark));
+    transform: rotate(5deg);
+  }
+
+  .message {
+    font-size: 14px;
+  }
+}

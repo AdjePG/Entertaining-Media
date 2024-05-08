@@ -1,0 +1,93 @@
+[
+  {
+    "title": "🟥🟧🟨 Platforms",
+    "params": [{
+      "field": "genres",
+      "comparator": "=",
+      "value": "8",
+      "conditionRel": null
+    }]
+  },{
+    "title": "2️⃣0️⃣2️⃣4️⃣ Releases",
+    "params": [{
+      "field": "first_release_date",
+      "comparator": ">",
+      "value": "1704067200",
+      "conditionRel": null
+    }]
+  },{
+    "title": "👸 RPG",
+    "params": [{
+      "field": "genres",
+      "comparator": "=",
+      "value": "12",
+      "conditionRel": null
+    }]
+  },{
+    "title": "🕹️ Arcade",
+    "params": [{
+      "field": "genres",
+      "comparator": "=",
+      "value": "33",
+      "conditionRel": null
+    }]
+  },{
+    "title": "🧔 Simulator",
+    "params": [{
+      "field": "genres",
+      "comparator": "=",
+      "value": "13",
+      "conditionRel": null
+    }]
+  },{
+    "title": "🖥️ PC Gaming",
+    "params": [{
+      "field": "platforms",
+      "comparator": "=",
+      "value": "(3,6,14)",
+      "conditionRel": null
+    }]
+  },{
+    "title": "📱 Phone Gaming",
+    "params": [{
+      "field": "platforms",
+      "comparator": "=",
+      "value": "(34,39)",
+      "conditionRel": "&"
+    },{
+      "field": "platforms",
+      "comparator": "!=",
+      "value": "(3,6,14)",
+      "conditionRel": null
+    }]
+  },{
+    "title": "🧑‍🔧 Super Mario Time!",
+    "params": [{
+      "field": "platforms",
+      "comparator": "=",
+      "value": "(4,5,18,19,20,21,22,24,33,37,41,130,137,159)",
+      "conditionRel": "&"
+    },{
+      "field": "name",
+      "comparator": "=",
+      "value": "*\"Super Mario\"*",
+      "conditionRel": null
+    }]
+  },{
+    "title": "🏎️💨 Racing",
+    "params": [{
+      "field": "genres",
+      "comparator": "=",
+      "value": "10",
+      "conditionRel": null
+    }]
+  },{
+    "title": "🧩 Puzzle",
+    "params": [{
+      "field": "genres",
+      "comparator": "=",
+      "value": "9",
+      "conditionRel": null
+    }]
+  }
+]

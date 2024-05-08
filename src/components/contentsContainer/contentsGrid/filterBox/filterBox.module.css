@@ -1,0 +1,45 @@
+.title {
+  margin: 0;
+  text-align: center;
+  transition: ease 0.2s;
+}
+
+.filterBox {
+  --inputLight: #e6e6e6;
+  --inputDark: #232323;
+  --itemHoverLight: #00000040;
+  --itemHoverDark: #ffffff40;
+  
+  display: flex;
+  justify-content: center;
+  
+  .input {
+    background: light-dark(var(--inputLight), var(--inputDark));
+    border: 0;
+    border-radius: 8px 0 0 8px;
+    font-size: 14px;
+    margin: 0 5px 0 0;
+    padding: 8px;
+    transition: ease 0.2s;
+    width: 100%
+  }
+
+  .search {
+    background: light-dark(var(--buttonLight), var(--buttonDark));
+    border: 0;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    min-width: 80px;
+    padding: 8px;
+    transition: ease 0.2s;
+    user-select: none;
+    
+    .icon {
+      font-size: 18px;
+    }
+  }
+
+  .search:hover {
+    background: light-dark(var(--itemHoverLight), var(--itemHoverDark));
+  }
+}

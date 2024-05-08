@@ -1,0 +1,90 @@
+[
+  {
+    "title": "🛸 SCI-FI",
+    "params": [{
+      "field": "with_genres",
+      "value": "878"
+    }]
+  },
+  {
+    "title": "🤣 Just Laughs",
+    "params": [{
+      "field": "with_genres",
+      "value": "35"
+    },{
+      "field": "certification_country",
+      "value": "US"
+    },{
+      "field": "certification",
+      "value": "R"
+    }]
+  },
+  {
+    "title": "😱💀 Hours Of Horror",
+    "params": [{
+      "field": "with_genres",
+      "value": "27"
+    },{
+      "field": "certification_country",
+      "value": "US"
+    },{
+      "field": "certification",
+      "value": "R"
+    }]
+  },
+  {
+    "title": "🏜️🤠 Western",
+    "params": [{
+      "field": "with_genres",
+      "value": "37"
+    }]
+  },
+  {
+    "title": "🎶 Let's sing!",
+    "params": [{
+      "field": "with_genres",
+      "value": "10402"
+    }]
+  },
+  {
+    "title": "🍙 A-NI-ME (アニメ)",
+    "params": [{
+      "field": "with_keywords",
+      "value": "210024"
+    }]
+  },
+  {
+    "title": "📖 Documentaries",
+    "params": [{
+      "field": "with_genres",
+      "value": "99"
+    }]
+  },
+  {
+    "title": "💃🪭 ¡España!",
+    "params": [{
+      "field": "with_origin_country",
+      "value": "ES"
+    }]
+  },
+  {
+    "title": "😯 Thrilleeeeeer!",
+    "params": [{
+      "field": "with_genres",
+      "value": "53"
+    },{
+      "field": "certification_country",
+      "value": "US"
+    },{
+      "field": "certification",
+      "value": "R"
+    }]
+  },
+  {
+    "title": "🎩 Charlie Chaplin",
+    "params": [{
+      "field": "with_crew",
+      "value": "13848"
+    }]
+  }
+]

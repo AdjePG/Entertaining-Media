@@ -1,0 +1,60 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 0 auto;
+  width: 830px;
+}
+
+.message {
+  font-size: 14px;
+  text-align: center;
+  transition: ease 0.2s;
+}
+
+.load {
+  background: light-dark(var(--buttonLight), var(--buttonDark));
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0 auto;
+  padding: 5px;
+  transition: ease 0.2s;
+	user-select: none;
+  width: 300px;
+}
+
+.messageError {
+  --errorLight: #ff4747;
+  --errorDark: #500000;
+  --borderErrorLight: #ff2424;
+  --borderErrorDark: #640000;
+
+  background: light-dark(var(--errorLight), var(--errorDark));
+  border: 5px solid light-dark(var(--borderErrorLight), var(--borderErrorDark));;
+  border-radius: 8px;
+  display: block;
+  font-size: 14px;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  transition: color ease 0.2s;
+}
+
+.load:hover {
+  background: light-dark(var(--itemHoverLight), var(--itemHoverDark));
+}
+
+@media screen and (max-width: 860px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    width: 410px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .grid {
+    width: 330px;
+  }
+}

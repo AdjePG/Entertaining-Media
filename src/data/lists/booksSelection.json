@@ -1,0 +1,93 @@
+[
+  {
+    "title": "🧑‍🦳 Stephen King",
+    "params": [{
+      "field": "q",
+      "value": "Stephen King"
+    },{
+      "field": "orderBy",
+      "value": "relevance"
+    }]
+  },{
+    "title": "🪄 Harry Potter",
+    "params": [{
+      "field": "q",
+      "value": "harry potter"
+    },{
+      "field": "orderBy",
+      "value": "relevance"
+    }]
+  },{
+    "title": "🤖 Artificial Intelligence",
+    "params": [{
+      "field": "q",
+      "value": "artificial intelligence subject:science"
+    },{
+      "field": "orderBy",
+      "value": "relevance"
+    }]
+  },{
+    "title": "🖋️ Poetry",
+    "params": [{
+      "field": "q",
+      "value": "subject:poetry"
+    },{
+      "field": "orderBy",
+      "value": "relevance"
+    }]
+  },{
+    "title": "🐲 Fantasy!",
+    "params": [{
+      "field": "q",
+      "value": "subject:fantasy"
+    },{
+      "field": "orderBy",
+      "value": "relevance"
+    }]
+  },{
+    "title": "🧑‍🦳 Ken Follet",
+    "params": [{
+      "field": "q",
+      "value": "Ken Follet"
+    },{
+      "field": "orderBy",
+      "value": "relevance"
+    }]
+  },{
+    "title": "💘 Romance",
+    "params": [{
+      "field": "q",
+      "value": "subject:romance"
+    },{
+      "field": "orderBy",
+      "value": "relevance"
+    }]
+  },{
+    "title": "👦👧 Young fiction",
+    "params": [{
+      "field": "q",
+      "value": "young fiction"
+    },{
+      "field": "orderBy",
+      "value": "relevance"
+    }]
+  },{
+    "title": "🔪 True Crime!",
+    "params": [{
+      "field": "q",
+      "value": "subject:crime"
+    },{
+      "field": "orderBy",
+      "value": "relevance"
+    }]
+  },{
+    "title": "✏️ Comics",
+    "params": [{
+      "field": "q",
+      "value": "subject:comic"
+    },{
+      "field": "orderBy",
+      "value": "relevance"
+    }]
+  }
+]

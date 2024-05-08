@@ -1,0 +1,23 @@
+:root {
+  --backgroundLight: #ffffff;
+  --backgroundDark: #121212;
+  --textLight: #000000;
+  --textDark: #ffffff;
+  --buttonLight: #d6d6d6;
+  --buttonDark: #333333;
+
+  color-scheme: light dark;
+  scrollbar-width: thin;
+}
+
+body {
+  margin: 0;
+  min-width: 350px;
+  padding: 0;
+  justify-content: center;
+  overflow-x: hidden;
+
+  main {
+    width: 100%;
+  }
+}

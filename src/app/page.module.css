@@ -1,0 +1,88 @@
+.container {
+  --frontBackground: #ffffffcb;
+  --frontBackgroundDM: #000000ad;
+  --itemHoverLight: #00000040;
+  --itemHoverDark: #ffffff40;
+
+  height: calc(100dvh - 46px);
+  padding: 46px 0 0 0;
+
+  .frontPage {
+    height: calc(100% - 126px);
+    position: relative;
+    width: 100%;
+
+    .background {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .frontText {
+      align-content: center;
+      background: light-dark(var(--frontBackground), var(--frontBackgroundDM));
+      box-sizing: border-box;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      transition: ease 0.2s;
+      width: 100%;
+  
+      .title {
+        font-size: 40px;
+      }
+
+      .description {
+        font-size: 14px;
+      }
+    }
+  }
+  
+  .credits {
+    align-content: center;
+    box-sizing: border-box;
+    height: 126px;
+
+    .description {
+      font-size: 14px;
+      text-align: center;
+      transition: ease 0.2s;
+    }
+
+    .linksList {
+      display: flex;
+      gap: 10px;
+      margin: 0 auto;
+      max-width: 830px;
+      list-style: none;
+      padding: 10px;
+
+      .listItem {
+        user-select: none;
+        width: 100%;
+
+        .itemLink {
+          align-items: center;
+          background: light-dark(var(--buttonLight), var(--buttonDark));
+          border-radius: 8px;
+          box-sizing: border-box;
+          color: light-dark(var(--textLight), var(--textDark));
+          display: flex;
+          font-size: 14px;
+          gap: 10px;
+          justify-content: center;
+          padding: 5px;
+          text-align: center;
+          text-decoration: none;
+          transition: ease 0.2s;
+        }
+
+        .itemLink:hover{
+          background: light-dark(var(--itemHoverLight), var(--itemHoverDark));
+        }
+      }
+    }
+  }
+}
