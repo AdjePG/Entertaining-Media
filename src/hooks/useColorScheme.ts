@@ -1,5 +1,5 @@
 import { LDSCHEME_STATUS } from "@/utils/constants";
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 interface LightDarkMode {
   code: string
@@ -7,9 +7,24 @@ interface LightDarkMode {
 }
 
 export function useColorScheme() {
-  const initialColorScheme : string | null = window.localStorage.getItem("ldMode")
+  useEffect(() => {
+    const localStorageColorScheme : string | null = window.localStorage.getItem("ldMode")
+    
+    if (localStorageColorScheme) {
+      const initialColorScheme : LightDarkMode = JSON.parse(localStorageColorScheme)
+      
+      setColorScheme(initialColorScheme)
+      document.documentElement.style.colorScheme = initialColorScheme.code
+    } else {
+      setColorScheme({
+        code : LDSCHEME_STATUS.SYSTEM,
+        name : "Default"
+      })
+      document.documentElement.style.colorScheme = LDSCHEME_STATUS.SYSTEM
+    }
+  }, [])
 
-  const [colorScheme, setColorScheme] = useState<LightDarkMode>(initialColorScheme ? JSON.parse(initialColorScheme) : {
+  const [colorScheme, setColorScheme] = useState<LightDarkMode>({
     code : LDSCHEME_STATUS.SYSTEM,
     name : "Default"
   });

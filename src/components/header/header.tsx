@@ -7,15 +7,9 @@ import { useColorScheme } from '@/hooks/useColorScheme'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFilm, faGamepad, faBook, faCircleHalfStroke, faSun, faMoon} from '@fortawesome/free-solid-svg-icons'
 import { LDSCHEME_STATUS } from '@/utils/constants'
-import { useEffect } from 'react'
-
 
 export default function Header() {
   const {colorScheme, changeColorScheme} = useColorScheme()
-  
-  useEffect(() => {
-    document.documentElement.style.colorScheme = colorScheme.code
-  }, [])
   
   return (
     <header className={`${styles.header}`}>
